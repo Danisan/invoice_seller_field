@@ -14,7 +14,6 @@ class invoice_seller_field(osv.osv):
             ),
             'Seller'
         ),
-        'cc_voucher': fields.char('Credit Card Voucher'),
     }
 
     _defaults = {
