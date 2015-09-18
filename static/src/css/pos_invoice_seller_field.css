@@ -1,0 +1,16 @@
+.pos .header-seller select {
+    padding: 4px;
+    border-radius: 3px;
+    border: solid 1px #cecbcb;
+    margin: 10px 0 0 7px;
+    background: white;
+    font-family: "Lato","Lucida Grande", Helvetica, Verdana, Arial;
+    color: #555555;
+    width: 145px;
+    font-size: 14px;
+    box-sizing: border-box;
+    float: left;
+}
+.pos .pos-logo {
+    float: left;
+}
