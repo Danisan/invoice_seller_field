@@ -1,15 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
-    <record model="ir.ui.view" id="invoice_seller_field">
-        <field name="name">account.invoice.form</field>
-        <field name="model">account.invoice</field>
-        <field name="inherit_id" ref="account.invoice_form" />
-        <field name="arch" type="xml">
-            <xpath expr="/form/sheet/group/group/field[@name='partner_id']" position="after">
-                <field name="seller_id" />
+
+        <template id="assets_frontend" name="invoice_seller_field assets" inherit_id="point_of_sale.index">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/invoice_seller_field/static/src/js/pos_invoice_seller_field.js"></script>
             </xpath>
-        </field>
-     </record>
+        </template>
+
+        <template id="index" name="invoice_seller_field index" inherit_id="point_of_sale.index">
+            <xpath expr="//link[@id='pos-stylesheet']" position="after">
+                <link rel="stylesheet" href="/invoice_seller_field/static/src/css/pos_invoice_seller_field.css"/>
+            </xpath>
+        </template>
+
+        <record model="ir.ui.view" id="invoice_seller_field">
+            <field name="name">account.invoice.form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form" />
+            <field name="arch" type="xml">
+                <xpath expr="/form/sheet/group/group/field[@name='partner_id']" position="after">
+                    <field name="seller_id" />
+                </xpath>
+            </field>
+         </record>
+
      </data>
 </openerp>

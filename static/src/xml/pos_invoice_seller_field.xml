@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="HeaderSellerField" >
+        <select class='' name=''>
+            <t t-foreach='sellers' t-as='seller'>
+                <option t-att-value='seller.seller_id'>
+                    <t t-esc='seller.seller_name'/>
+                </option>
+            </t>
+        </select>
+    </t>
+
+</templates>
