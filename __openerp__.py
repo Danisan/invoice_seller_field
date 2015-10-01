@@ -4,7 +4,7 @@
     'author': "Daniel blancomartin - Blanco Martín & Asociados",
     'website': "http://www.blancomartin.com.ar",
     'category': "Tools",
-    'depends': ['point_of_sale'],
+    'depends': ['point_of_sale','account'],
     'version': '0.1',
     #'depends': ['pos'], # para el caso que se use para agregar campo en pos también
     'description': """

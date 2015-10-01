@@ -9,9 +9,12 @@ class invoice_seller_field(osv.osv):
         'seller_id': fields.selection(
             (
                 ('00', '00 - Sin Vendedor'),
-                ('01', '01 - Carlos'),
-                ('02', '02 - José'),
-                ('03', '03 - Otro')
+                ('01', '01 - Rene'),
+                ('02', '02 - Guillermo'),
+                ('03', '03 - Francisco'),
+                ('04', '04 - Lucas'),
+                ('05', '05 - Part-Time'),
+                ('06', '06 - Matias')            
             ),
             'Seller'
         ),
