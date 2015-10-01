@@ -1,1 +1,1 @@
-import invoice_seller_field
+from . import invoice_seller_field
