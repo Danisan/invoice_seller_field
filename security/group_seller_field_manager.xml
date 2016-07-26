@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="0">
+        <record id="group_seller_field_manager" model="res.groups">
+            <field name="name">Invoice Seller Field Manager</field>
+            <field name="category_id" ref="base.group_sale_manager"/>
+        </record>
+        <record model="ir.module.category" id="group_sale_manager">
+            <field name="name">Invoice Seller Field Manager</field>
+            <field name="description">Person who manages salesperson</field>
+            <field name="sequence">20</field>
+        </record>
+    </data>
+</openerp>

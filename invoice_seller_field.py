@@ -13,8 +13,11 @@ class invoice_seller_field(models.Model):
             ('02', '02 - Guillermo'),
             ('03', '03 - Francisco'),
             ('04', '04 - Lucas'),
-            ('05', '05 - Part-Time'),
-            ('06', '06 - Matias')), 'Seller', default = '00')
+            ('05', '05 - Diego'),
+            ('06', '06 - Matias'),
+            ('07', '07 - Luis'),
+            ('08', '08 - Fabian'),
+            ('09', '09- Anthony')), 'Seller', default = '00')
 
 
 class pos_config(models.Model):
